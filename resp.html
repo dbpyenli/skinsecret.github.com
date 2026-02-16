@@ -219,6 +219,7 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
 }
 .awards-wrap {
     position: relative;
+    margin-bottom: 50px;
 }
 
 .awards-wrap .bg {
@@ -229,19 +230,21 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
     opacity: 0.2;
 }
 .awards {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
     position: relative;
     padding: 50px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .awards-item {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    align-items: center;
-    width: 33%;
+    align-items: center; 
+    margin-bottom: 50px;
 }
 .awards-item img {
+    max-height: 80px;
     max-width: 150px;
     height: auto;
 }
@@ -296,10 +299,9 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
         height: 100%;
         max-height: 150px;
     }
-    .detail-header {
-        height: auto;
-    }
-
+    .detail-header{
+        height:auto;
+    }  
 }
 @media (max-width: 600px){
     html, body {
@@ -338,16 +340,9 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
     .top-wrap{
         overflow-y: auto;
     }
-   
+  
 }
 
-
-@media (max-width: 500px){
-   .detail-content{
-        font-size:16px;
-        letter-spacing: 1px;
-    }
-}
 @media (max-height: 750px){
     .detail.contact{
         display:none;
@@ -361,8 +356,20 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
 }
 
 
+@media (max-width: 500px){
+   .detail-content{
+        font-size:16px;
+        letter-spacing: 1px;
+    }
+}
+
 @media (max-width: 450px){
- 
+    .awards-item{
+        width: 50%;
+    }
+    .awards-item img{
+        max-width: 100px;
+    } 
     .detail-content h3{
         margin-bottom: 25px;
     }
@@ -378,9 +385,6 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
     .mmenu {
         margin-bottom: 80px;
     }
-    .detail-content{
-        font-size:16px;
-    }
 }
 
 </style>
@@ -393,7 +397,7 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
             <div class="detail-bg">
                             
                 <div class="menu-content">
-                    <a href="index.html" class="menu-item active">
+                    <a href="index.html" class="menu-item ">
                         <div class="bg"></div> 
                         <div class="text">集團理念</div> 
                     </a>
@@ -401,7 +405,7 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
                         <div class="bg"></div> 
                         <div class="text">品牌榮譽</div> 
                     </a>
-                    <a  href="resp.html" class="menu-item">
+                    <a  href="resp.html" class="menu-item active">
                         <div class="bg"></div> 
                         <div class="text">社會責任</div> 
                     </a>
@@ -415,14 +419,14 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
             
             
             </div>
-          <!--  <div class="detail contact">
+          <!--   <div class="detail contact">
                 <div class="title">聯絡我們</div>
                 <div class="s-row">電話：2768 9888</div>
                 <div class="s-row">地址：九龍灣一號九龍22樓全層</div>
                 <div class="s-row">電郵：<a href="mailto:info@skinsecret.com.hk">info@skinsecret.com.hk</a></div>
                 <div class="s-row sep">--------------------------------------------</div>
                 <div class="s-row sep">© 2026 Copyright SKIN SECRET LIMITED All rights reserved</div>
-            </div>-->
+            </div> -->
             <div class="logo"><img src="/images/skin sercert-W-01.png" ></div>
         </div>
         
@@ -443,32 +447,41 @@ a.menu-item, a:link.menu-item, a:visited.menu-item{
                         </div>       
                     </div>
                     <div class="detail-content">
-               
  
+                    <h3>社會責任</h3>
+                    奉行「取之社會，用之社會」，不只肩負作為企業角色，同時每年無間斷地積極參與慈善活動，支援社福界，盡我們所能回饋社會，建構美好社區。<br><br>與此同時，推行無紙化電子計劃，降低企業碳足跡，實踐可持續發展的環保概念，盡我們所能作出貢獻，而數碼化亦有助提升工作效率，雙效得益。<br><br>
                     
-                    <h3>集團理念</h3>
-                    「真誠」、「誠實」是 Skin Secret 的宗旨和服務標準；以客為本，專注提供先進科技的美容療程體驗。<br><br>我們深信內外兼修的「美麗」哲學，由內在出發：復修、重整、平衡、進化，讓外在感受得到、看得見、觸摸到。<br><br>持續發展、精益求精我們給予自己的標準，我們重視企業管理，相信凝聚內外部團隊，就能為客人以至公司做好每一樣事情。
-                    
-                     
-                    
-                   <!--  <div class="detail-footer">
-                        <div class="title">聯絡我們</div>
-                        <div class="s-row">電話：2768 9888</div>
-                        <div class="s-row">地址：九龍灣一號九龍22樓全層</div>
-                        <div class="s-row">電郵：<a href="mailto:info@skinsecret.com.hk">info@skinsecret.com.hk</a></div>
-                        <div class="s-row sep">--------------------------------------------</div>
-                        <div class="s-row sep">© 2026 Copyright SKIN SECRET LIMITED All rights reserved</div>
-                    </div>-->
-                    
+                        
+                    <div class="awards-wrap"> 
+                        <div class="bg"></div>
+                        <div class="awards"> 
+                            <div class="awards-item"><img src="/images/caringcompany.png"></div>
+                            <div class="awards-item"><img src="/images/HKCF-3D-no-statement_high res-01 (1).jpg"></div> 
+                            <div class="awards-item"><img src="/images/Teenskey logo_white bg.png"></div> 
+                            <div class="awards-item"><img src="/images/2025開心工作間-LOGO_Happy_Company_5Years+.png"></div> 
+                            <div class="awards-item"><img src="/images/hearttoheart.png"></div> 
+                        </div>
                     </div>
-                 <!--   <div class="detail-footer">
+                    
+                    
+                   <!--   <div class="detail-footer">
                         <div class="title">聯絡我們</div>
                         <div class="s-row">電話：2768 9888</div>
                         <div class="s-row">地址：九龍灣一號九龍22樓全層</div>
                         <div class="s-row">電郵：<a href="mailto:info@skinsecret.com.hk">info@skinsecret.com.hk</a></div>
                         <div class="s-row sep">--------------------------------------------</div>
                         <div class="s-row sep">© 2026 Copyright SKIN SECRET LIMITED All rights reserved</div>
-                    </div>-->
+                    </div>
+                     -->
+                    </div>
+                <!--    <div class="detail-footer">
+                        <div class="title">聯絡我們</div>
+                        <div class="s-row">電話：2768 9888</div>
+                        <div class="s-row">地址：九龍灣一號九龍22樓全層</div>
+                        <div class="s-row">電郵：<a href="mailto:info@skinsecret.com.hk">info@skinsecret.com.hk</a></div>
+                        <div class="s-row sep">--------------------------------------------</div>
+                        <div class="s-row sep">© 2026 Copyright SKIN SECRET LIMITED All rights reserved</div>
+                    </div> -->
                    
                 </div>
             </div>
